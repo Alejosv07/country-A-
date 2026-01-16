@@ -1,3 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "tailwindcss";
+
+/* Esto importa daisyUI directamente usando la nueva lógica de Tailwind v4 */
+@plugin "daisyui";
