@@ -4,7 +4,11 @@ import { HomePage } from './shared/pages/home-page/home-page';
 export const routes: Routes = [
   {
     path: "",
-    component: HomePage
+    component: HomePage,
+  },
+  {
+    path:"",
+    loadChildren: ()=> import("./country/country.routes"),
   },
   {
     path:"**",
