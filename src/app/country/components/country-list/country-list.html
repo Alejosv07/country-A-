@@ -1,0 +1,36 @@
+<div class="overflow-x-auto rounded-box border border-base-content/5 bg-base-100 my-4">
+  <table class="table">
+    <!-- head -->
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Icon</th>
+        <th>Flag</th>
+        <th>Name</th>
+        <th>Capital</th>
+        <th>Population</th>
+      </tr>
+    </thead>
+    <tbody>
+    <tbody>
+      @for (country of inputCountryList(); track country.id) {
+      <tr>
+        <td>{{ country.id }}</td>
+        <td>{{ country.icon }}</td>
+        <td class="w-1"><img [src]="country.flag" [alt]="country.name"></td>
+        <td>{{ country.name }}</td>
+        <td>{{ country.capital }}</td>
+        <td>
+          <span class="badge badge-secondary">
+            {{ country.population | number }}
+          </span>
+        </td>
+      </tr>
+      } @empty {
+      <tr>
+        <td colspan="6" class="text-center">No hay paises que mostrar.</td>
+      </tr>
+      }
+    </tbody>
+  </table>
+</div>

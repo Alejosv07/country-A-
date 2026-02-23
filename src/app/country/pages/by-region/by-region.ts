@@ -1,19 +1,16 @@
-import { Component, computed, effect, inject, signal } from '@angular/core';
+import { Component, computed, inject } from '@angular/core';
 import { SearchInput } from "../../components/search-input/search-input";
 import { CountryList } from "../../components/country-list/country-list";
 import { CountryService } from '../../services/country-service';
 import { MapperCountry } from '../../interfaces/mapper-country';
 
 @Component({
-  selector: 'app-by-capital-page',
+  selector: 'app-by-region',
   imports: [SearchInput, CountryList],
-  templateUrl: './by-capital-page.html',
+  templateUrl: './by-region.html',
   styles: ``,
 })
-export class ByCapitalPage {
-  constructor() {
-  }
-
+export class ByRegion {
   public countryServices = inject(CountryService);
   public mapper = inject(MapperCountry);
   public dtoList = computed(() => {
@@ -22,8 +19,6 @@ export class ByCapitalPage {
     if (state.isLoading || !state.data) {
       return [];
     }
-
-      return this.mapper.mapToDTOArray(state.data);
+    return this.mapper.mapToDTOArray(state.data);
   });
-
 }
