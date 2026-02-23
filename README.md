@@ -1,59 +1,57 @@
-# Country
+# Country App 🌎
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.0.4.
+Una aplicación moderna y rápida construida con **Angular** que permite explorar información detallada sobre países de todo el mundo utilizando la [REST Countries API](https://restcountries.com/).
 
-## Development server
+## 🚀 Demo
+Puedes ver la aplicación en vivo aquí:  
+[https://alejosv07.github.io/country-A-/](https://alejosv07.github.io/country-A-/)
 
-To start a local development server, run:
+---
 
-```bash
-ng serve
-```
+## ✨ Características
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+* **Búsqueda por Capital:** Encuentra países rápidamente ingresando su ciudad principal.
+* **Búsqueda por País:** Explora detalles específicos de cualquier nación, como El Salvador.
+* **Filtrado por Región:** Clasifica y visualiza países según su continente o región geográfica.
+* **Diseño Responsive:** Interfaz oscura (Dark Mode) con componentes estilizados y Hero section.
+* **Tablas de Datos:** Visualización clara de banderas, nombres, capitales y población.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🛠️ Tecnologías utilizadas
 
-```bash
-ng generate component component-name
-```
+* **Angular** (Framework principal)
+* **TypeScript** (Lenguaje de programación)
+* **Tailwind CSS / DaisyUI** (Estilos y componentes de interfaz)
+* **RxJS** (Manejo de flujos de datos y peticiones HTTP)
+* **REST Countries API** (Fuente de datos externa)
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+---
 
-```bash
-ng generate --help
-```
 
-## Building
+## ⚙️ Instalación local
 
-To build the project run:
+Si quieres ejecutar este proyecto en tu propia máquina, sigue estos pasos:
 
-```bash
-ng build
-```
+1.  **Clona el repositorio:**
+    ```bash
+    git clone [https://github.com/Alejosv07/country-A-.git](https://github.com/Alejosv07/country-A-.git)
+    ```
+2.  **Instala las dependencias:**
+    ```bash
+    npm install
+    ```
+3.  **Inicia el servidor de desarrollo:**
+    ```bash
+    ng serve -o
+    ```
+4.  Abre tu navegador en `http://localhost:4200/`.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+---
 
-## Running unit tests
+## 📄 Licencia
 
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+Este proyecto es de código abierto y está disponible bajo la licencia MIT.
 
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+---
+**Desarrollado con ❤️ por [Alejosv07](https://github.com/Alejosv07)**
